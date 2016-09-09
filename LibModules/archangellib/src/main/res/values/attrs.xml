@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name = "TintableImageView">
+		<attr name = "tint" format = "reference|color"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelDashLine">
+		<attr name = "adl_dash_color" format = "color"/>
+		<attr name = "adl_background" format = "reference"/>
+		<attr name = "adl_dash_gap" format = "dimension"/>
+		<attr name = "adl_dash_length" format = "dimension"/>
+		<attr name = "adl_line_width" format = "dimension"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelPasswordEditor">
+		<attr name = "ape_border_color" format = "color"/>
+		<attr name = "ape_divider_color" format = "color"/>
+		<attr name = "ape_background_color" format = "color"/>
+		<attr name = "ape_count" format = "integer"/>
+		<attr name = "ape_large_mode" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelRadioButton">
+		<attr name = "arb_color_main" format = "color"/>
+		<attr name = "arb_color_border" format = "color"/>
+		<attr name = "arb_color_text" format = "color"/>
+		<attr name = "arb_color_text_unchecked" format = "color"/>
+		<attr name = "arb_text_size" format = "dimension"/>
+		<attr name = "arb_box_size" format = "dimension"/>
+		<attr name = "arb_internal_space" format = "dimension"/>
+		<attr name = "arb_text" format = "string"/>
+		<attr name = "arb_checked" format = "boolean"/>
+		<attr name = "arb_disable_user_click" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelRatingBar">
+		<attr name = "arab_star_size" format = "dimension"/>
+		<attr name = "arab_star_spacing" format = "dimension"/>
+		<attr name = "arab_star_padding" format = "dimension"/>
+		<attr name = "arab_star_count" format = "integer"/>
+		<attr name = "arab_star_max" format = "integer"/>
+		<attr name = "arab_star_empty" format = "reference"/>
+		<attr name = "arab_star_fill" format = "reference"/>
+		<attr name = "arab_star_half" format = "reference"/>
+		<attr name = "arab_enabled" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelRedDot">
+		<attr name = "ard_style" format = "enum">
+			<enum name = "text" value = "0"/>
+			<enum name = "simple" value = "1"/>
+		</attr>
+	</declare-styleable>
+	<declare-styleable name = "AngelCheckBox">
+		<attr name = "acb_color_main" format = "color"/>
+		<attr name = "acb_color_border" format = "color"/>
+		<attr name = "acb_color_tick" format = "color"/>
+		<attr name = "acb_color_text" format = "color"/>
+		<attr name = "acb_color_text_unchecked" format = "color"/>
+		<attr name = "acb_text_size" format = "dimension"/>
+		<attr name = "acb_box_size" format = "dimension"/>
+		<attr name = "acb_internal_space" format = "dimension"/>
+		<attr name = "acb_text" format = "string"/>
+		<attr name = "acb_checked" format = "boolean"/>
+		<attr name = "acb_disable_user_click" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelSwitch">
+		<attr name = "as_color_main" format = "color"/>
+		<attr name = "as_checked" format = "boolean"/>
+		<attr name = "as_clickable" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelProgressBarHorizontal">
+		<attr name = "apbh_color" format = "color"/>
+		<attr name = "apbh_height" format = "dimension"/>
+		<attr name = "apbh_max" format = "integer"/>
+		<attr name = "apbh_min" format = "integer"/>
+		<attr name = "apbh_value" format = "integer"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelProgressBarVertical">
+		<attr name = "apbv_color" format = "color"/>
+		<attr name = "apbv_width" format = "dimension"/>
+		<attr name = "apbv_max" format = "integer"/>
+		<attr name = "apbv_min" format = "integer"/>
+		<attr name = "apbv_value" format = "integer"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelProgressCircle">
+		<attr name = "matProg_progressIndeterminate" format = "boolean"/>
+		<attr name = "matProg_barColor" format = "color"/>
+		<attr name = "matProg_rimColor" format = "color"/>
+		<attr name = "matProg_rimWidth" format = "dimension"/>
+		<attr name = "matProg_spinSpeed" format = "float"/>
+		<attr name = "matProg_barSpinCycleTime" format = "integer"/>
+		<attr name = "matProg_circleRadius" format = "dimension"/>
+		<attr name = "matProg_fillRadius" format = "boolean"/>
+		<attr name = "matProg_barWidth" format = "dimension"/>
+		<attr name = "matProg_linearProgress" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelMaterialLinearLayout">
+		<attr name = "aml_mode" format = "enum">
+			<enum name = "dark" value = "0"/>
+			<enum name = "light" value = "1"/>
+		</attr>
+		<attr name = "aml_trigger_mode" format = "enum">
+			<enum name = "start" value = "0"/>
+			<enum name = "end" value = "1"/>
+		</attr>
+		<attr name = "aml_border" format = "enum">
+			<enum name = "flat" value = "0"/>
+			<enum name = "round_corner" value = "1"/>
+			<enum name = "round" value = "2"/>
+		</attr>
+		<attr name = "aml_fill" format = "enum">
+			<enum name = "fill" value = "0"/>
+			<enum name = "border" value = "1"/>
+		</attr>
+		<attr name = "aml_border_radius" format = "dimension"/>
+		<attr name = "aml_color_background" format = "color"/>
+		<attr name = "aml_color_foreground" format = "color"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelMaterialButton">
+		<attr name = "amb_text" format = "string"/>
+		<attr name = "amb_text_color" format = "color"/>
+		<attr name = "amb_text_size" format = "dimension"/>
+		<attr name = "amb_text_gravity" format = "enum">
+			<enum name = "center" value = "1"/>
+			<enum name = "left" value = "2"/>
+			<enum name = "right" value = "3"/>
+		</attr>
+		<attr name = "amb_text_style" format = "enum">
+			<enum name = "normal" value = "0"/>
+			<enum name = "bold" value = "1"/>
+			<enum name = "italy" value = "2"/>
+			<enum name = "bold_and_italy" value = "3"/>
+		</attr>
+	</declare-styleable>
+	<declare-styleable name = "AngelFakeGridView">
+		<attr name = "afg_col_count" format = "integer"/>
+		<attr name = "afg_spacing_horizontal" format = "dimension"/>
+		<attr name = "afg_spacing_vertical" format = "dimension"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelMessLayout">
+		<attr name = "ame_spacing_horizontal" format = "dimension"/>
+		<attr name = "ame_spacing_vertical" format = "dimension"/>
+		<attr name = "ame_single_line" format = "boolean"/>
+		<attr name = "ame_is_vertical" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelMaterialProgressCircle">
+		<attr name = "amp_color" format = "string"/>
+		<attr name = "amp_endless" format = "boolean"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelCompoundImageView">
+		<attr name = "aciv_background" format = "color"/>
+		<attr name = "aciv_text_size" format = "dimension"/>
+		<attr name = "aciv_round" format = "boolean"/>
+		<attr name = "aciv_corner_radius" format = "dimension"/>
+	</declare-styleable>
+	<declare-styleable name = "AngelOptionItem">
+		<attr name = "aoi_icon_back" format = "color"/>
+		<attr name = "aoi_icon_radius" format = "dimension"/>
+		<attr name = "aoi_icon_title_spacing" format = "dimension"/>
+		<attr name = "aoi_icon_src" format = "reference"/>
+		<attr name = "aoi_icon_padding" format = "dimension"/>
+		<attr name = "aoi_title" format = "string"/>
+		<attr name = "aoi_title_text_size" format = "dimension"/>
+		<attr name = "aoi_subtitle" format = "string"/>
+		<attr name = "aoi_subtitle_text_size" format = "dimension"/>
+		<attr name = "aoi_content" format = "string"/>
+		<attr name = "aoi_content_text_size" format = "dimension"/>
+		<attr name = "aoi_arrow_visible" format = "boolean"/>
+		<attr name = "aoi_arrow_gone" format = "boolean"/>
+		<attr name = "aoi_icon_visible" format = "boolean"/>
+		<attr name = "aoi_icon_as_circle" format = "boolean"/>
+		<attr name = "aoi_icon_size" format = "dimension"/>
+		<attr name = "aoi_text_color" format = "color"/>
+		<attr name="aoi_text_color_content" format="color"/>
+	</declare-styleable>
+	<declare-styleable name = "RangeSeekBar">
+		<attr name = "absoluteMinValue" format = "integer|float"/>
+		<attr name = "absoluteMaxValue" format = "integer|float"/>
+		<attr name = "singleThumb" format = "boolean"/>
+		<attr name = "maxLabel" format = "string"/>
+		<attr name = "minLabel" format = "string"/>
+		<attr name = "thumb_normal" format = "reference"/>
+		<attr name = "thumb_pressed" format = "reference"/>
+		<attr name = "thumb_disabled" format = "reference"/>
+		<attr name = "thumb_size" format = "dimension"/>
+		<attr name = "track_height" format = "dimension"/>
+		<!--<attr name = "track" format = "reference" />-->
+		<!--<attr name = "track_active" format = "color" />-->
+		<!--<attr name = "track_inactive" format = "color" />-->
+		<attr name = "track_active" format = "reference"/>
+		<attr name = "track_inactive" format = "reference"/>
+	</declare-styleable>
+	<declare-styleable name = "MaskImage">
+		<!-- Identifier for the image that represents the Imageview's content. -->
+		<attr name = "image" format = "reference"/>
+		<!-- crop Imageview's content same as mask -->
+		<attr name = "mask" format = "reference"/>
+		<!-- Background Image -->
+		<attr name = "frame" format = "reference"/>
+	</declare-styleable>
+	<declare-styleable name = "PagerSlidingTabStrip">
+		<attr name = "pstsIndicatorColor" format = "color"/>
+		<attr name = "pstsUnderlineColor" format = "color"/>
+		<attr name = "pstsDividerColor" format = "color"/>
+		<attr name = "pstsIndicatorHeight" format = "dimension"/>
+		<attr name = "pstsUnderlineHeight" format = "dimension"/>
+		<attr name = "pstsDividerPadding" format = "dimension"/>
+		<attr name = "pstsTabPaddingLeftRight" format = "dimension"/>
+		<attr name = "pstsScrollOffset" format = "dimension"/>
+		<attr name = "pstsTabBackground" format = "reference"/>
+		<attr name = "pstsShouldExpand" format = "boolean"/>
+		<attr name = "pstsTextAllCaps" format = "boolean"/>
+		<attr name = "pstsTabCount" format = "integer"/>
+	</declare-styleable>
+	<declare-styleable name = "CustomAttributes">
+		<!--        indicate if the slider must show number indicator -->
+		<attr name = "showNumberIndicator" format = "boolean"/>
+		<!--        in progress view indicate max value of progress -->
+		<attr name = "max" format = "integer"/>
+		<!--        in progress view indicate min value of progress -->
+		<attr name = "min" format = "integer"/>
+		<!--        in progress view indicate value of progress -->
+		<attr name = "value" format = "integer"/>
+		<!--        in progress view indicate value of progress -->
+		<attr name = "progress" format = "integer"/>
+		<!--        in switche's view indicate state of view -->
+		<attr name = "check" format = "boolean"/>
+		<!--        in float button indicate icon resource -->
+		<attr name = "iconFloat" format = "integer"/>
+		<!--        in float button indicate if must start with animation -->
+		<attr name = "animate" format = "boolean"/>
+		<!--        Speed of ripple animation -->
+		<attr name = "rippleSpeed" format = "float"/>
+		<!--        in float button indicate if must start with animation -->
+		<attr name = "rippleColor" format = "color|reference"/>
+	</declare-styleable>
+</resources>

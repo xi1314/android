@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/fly_bg"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/fly_bg" />
+
+    <RelativeLayout
+        android:id="@+id/fly_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/left_wing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/fly1" />
+
+        <ImageView
+            android:id="@+id/fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fly" />
+
+        <ImageView
+            android:id="@+id/right_wing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/fly1" />
+    </RelativeLayout>
+</RelativeLayout>

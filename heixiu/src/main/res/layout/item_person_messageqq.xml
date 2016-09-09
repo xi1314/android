@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/chat_img"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            app:placeholderImageScaleType="fitXY"
+            app:placeholderImage="@drawable/icon_avatar_default"
+            app:roundAsCircle="true"/>
+
+        <ImageView
+            android:id="@+id/chat_img_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/chucijinrutuijian"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_img"
+            android:layout_marginTop="10dp"
+            android:text="快乐的小逗比"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/corn_btn"
+        android:layout_width="82dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_concern_btn"
+        android:text="+关注"
+        android:textColor="@color/text_black"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+</RelativeLayout>

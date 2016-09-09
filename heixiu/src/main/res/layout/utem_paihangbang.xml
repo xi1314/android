@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/cunzaigan_baoye2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cunzaigan_baoye1"
+        android:layout_marginRight="140dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageview_iamgeview2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            app:placeholderImage="@drawable/icon_avatar_default"
+            app:placeholderImageScaleType="fitXY"
+            app:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/textview_iamgeview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_iamgeview2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:lines="1"
+            android:text="不会的雨"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_iamgeview2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贡献"
+                android:textColor="@color/trans_white_75"
+                android:textSize="9.3dp"/>
+
+            <TextView
+                android:id="@+id/meilizhi_textviewcunzaigan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26"
+                android:textColor="#f5c823"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="存在感"
+                android:textColor="@color/trans_white_75"
+                android:textSize="9.3dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cunzaigan_baoye3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cunzaigan_baoye1"
+        android:layout_marginLeft="140dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageview_iamgeview3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            app:placeholderImage="@drawable/icon_avatar_default"
+            app:placeholderImageScaleType="fitXY"
+            app:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/textview_iamgeview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_iamgeview3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:lines="1"
+            android:text="不会的雨"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_iamgeview3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贡献"
+                android:textColor="@color/trans_white_75"
+                android:textSize="9.3dp"/>
+
+            <TextView
+                android:id="@+id/meilizhi_textviewcunzaigan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26"
+                android:textColor="#f5c823"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="存在感"
+                android:textColor="@color/trans_white_75"
+                android:textSize="9.3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cunzaigan_baoye2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="46dp"
+            android:layout_height="1dp"
+            android:background="#81efad"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#81efad"
+            android:text="贡献榜"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="46dp"
+
+            android:layout_height="1dp"
+            android:background="#81efad"/>
+    </LinearLayout>
+
+</RelativeLayout>

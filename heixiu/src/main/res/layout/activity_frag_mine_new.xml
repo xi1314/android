@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MineHeidouActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_main_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_background"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/heidou_back">
+
+            <TextView
+                android:id="@+id/text_zuanshi_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="嘿豆余额"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_zuanshi_viewnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/text_zuanshi_view"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+        </RelativeLayout>
+
+        <TabHost
+             android:id="@+id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl_background"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#f0f2f1">
+                    <ImageView
+                        android:id="@+id/radiobutton"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_toLeftOf="@+id/keduihuanzuanshi"
+                        android:background="@drawable/checkdpoint"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"/>
+                    <TextView
+                        android:id="@+id/keduihuanzuanshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="可兑换钻石：0"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="264dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white" />
+                <!-- 将tabhost的tabcontent隐藏，用viewPage填充 -->
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone"></FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

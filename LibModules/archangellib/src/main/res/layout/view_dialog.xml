@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/trans_25"
+    android:padding = "24dp">
+
+    <LinearLayout
+        android:id = "@+id/contentDialog"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_centerInParent = "true"
+        android:background = "@drawable/p_dialog"
+        android:orientation = "vertical"
+        android:paddingBottom = "26dp"
+        android:paddingLeft = "10dp"
+        android:paddingRight = "10dp"
+        android:paddingTop = "10dp">
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:clipToPadding = "false"
+            android:orientation = "vertical"
+            android:padding = "24dp">
+
+            <TextView
+                android:id = "@+id/view_dialog_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "标题"
+                android:textColor = "@color/text_black"
+                android:textSize = "18sp" />
+
+            <TextView
+                android:id = "@+id/view_dialog_message"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:text = "这是对话框的正文哦~~~~~~~~~\n哦哈哈哈哈~"
+                android:textColor = "@color/text_black"
+                android:textSize = "14sp" />
+
+            <FrameLayout
+                android:id = "@+id/view_dialog_custom"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginLeft = "-24dp"
+                android:layout_marginRight = "-24dp"
+                android:layout_marginTop = "16dp"
+                android:visibility = "gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id = "@+id/button_container"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:gravity = "right"
+            android:orientation = "horizontal"
+            android:paddingRight = "16dp">
+
+            <studio.archangel.toolkitv2.views.AngelMaterialButton
+                android:id = "@+id/button_cancel"
+                android:layout_width = "wrap_content"
+                android:layout_height = "36dp"
+                android:layout_gravity = "center_vertical"
+                android:minWidth = "72dp"
+                app:amb_text = "取消"
+                app:amb_text_color = "@color/text_black"
+                app:amb_text_size = "14sp"
+                app:aml_border = "round_corner"
+                app:aml_color_background = "@color/trans" />
+
+            <studio.archangel.toolkitv2.views.AngelMaterialButton
+                android:id = "@+id/button_neutral"
+                android:layout_width = "wrap_content"
+                android:layout_height = "36dp"
+                android:layout_gravity = "center_vertical"
+                android:minWidth = "72dp"
+                android:visibility = "gone"
+                app:amb_text = "其他"
+                app:amb_text_color = "@color/text_black"
+                app:amb_text_size = "14sp"
+                app:aml_border = "round_corner"
+                app:aml_color_background = "@color/trans" />
+
+            <studio.archangel.toolkitv2.views.AngelMaterialButton
+                android:id = "@+id/button_accept"
+                android:layout_width = "wrap_content"
+                android:layout_height = "36dp"
+                android:layout_gravity = "center_vertical"
+                android:minWidth = "72dp"
+                app:amb_text = "确定"
+                app:amb_text_color = "@color/text_black"
+                app:amb_text_size = "14sp"
+                app:aml_border = "round_corner"
+                app:aml_color_background = "@color/trans" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>    <!--<?xml version="1.0" encoding="utf-8"?>-->    <!--<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"-->    <!--xmlns:app = "http://schemas.android.com/apk/res-auto"-->    <!--android:layout_width = "match_parent"-->    <!--android:layout_height = "match_parent"-->    <!--android:background = "#55000000"-->    <!--android:padding = "32dp">-->    <!--<LinearLayout-->    <!--android:id = "@+id/contentDialog"-->    <!--android:layout_width = "fill_parent"-->    <!--android:layout_height = "wrap_content"-->    <!--android:layout_centerInParent = "true"-->    <!--android:background = "@drawable/dialog_background"-->    <!--android:orientation = "vertical">-->    <!--<TextView-->    <!--android:id = "@+id/view_dialog_title"-->    <!--android:layout_width = "wrap_content"-->    <!--android:layout_height = "wrap_content"-->    <!--android:layout_marginBottom = "16dp"-->    <!--android:layout_marginLeft = "24dp"-->    <!--android:layout_marginRight = "24dp"-->    <!--android:layout_marginTop = "24dp"-->    <!--android:text = "Title"-->    <!--android:textColor = "#000"-->    <!--android:textSize = "20sp" />-->    <!--<TextView-->    <!--android:id = "@+id/view_dialog_message"-->    <!--android:layout_width = "wrap_content"-->    <!--android:layout_height = "wrap_content"-->    <!--android:layout_marginBottom = "16dp"-->    <!--android:layout_marginLeft = "24dp"-->    <!--android:layout_marginRight = "24dp"-->    <!--android:text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"-->    <!--android:textColor = "#000"-->    <!--android:textSize = "14sp" />-->    <!--<RelativeLayout-->    <!--android:id = "@+id/view_dialog_custom"-->    <!--android:layout_width = "match_parent"-->    <!--android:layout_height = "wrap_content"-->    <!--android:layout_gravity = "center"-->    <!--android:layout_marginBottom = "16dp"-->    <!--android:visibility = "gone" />-->    <!--<LinearLayout-->    <!--android:id = "@+id/button_container"-->    <!--android:layout_width = "fill_parent"-->    <!--android:layout_height = "48dp"-->    <!--android:layout_marginBottom = "8dp"-->    <!--android:gravity = "right"-->    <!--android:orientation = "horizontal"-->    <!--android:paddingRight = "16dp">-->    <!--<studio.archangel.toolkitv2.views.AngelMaterialButton-->    <!--android:id = "@+id/button_cancel"-->    <!--android:layout_width = "wrap_content"-->    <!--android:layout_height = "36dp"-->    <!--android:layout_gravity = "center_vertical"-->    <!--android:minWidth = "54dp"-->    <!--app:amb_text = "取消"-->    <!--app:amb_text_color = "@color/black"-->    <!--app:amb_text_size = "14sp"-->    <!--app:aml_color_background = "@color/trans" />-->    <!--<studio.archangel.toolkitv2.views.AngelMaterialButton-->    <!--android:id = "@+id/button_neutral"-->    <!--android:layout_width = "wrap_content"-->    <!--android:layout_height = "36dp"-->    <!--android:layout_gravity = "center_vertical"-->    <!--android:minWidth = "54dp"-->    <!--android:visibility = "gone"-->    <!--app:amb_text = "其他"-->    <!--app:amb_text_color = "@color/black"-->    <!--app:amb_text_size = "14sp"-->    <!--app:aml_color_background = "@color/trans" />-->    <!--<studio.archangel.toolkitv2.views.AngelMaterialButton-->    <!--android:id = "@+id/button_accept"-->    <!--android:layout_width = "wrap_content"-->    <!--android:layout_height = "36dp"-->    <!--android:layout_gravity = "center_vertical"-->    <!--android:minWidth = "54dp"-->    <!--app:amb_text = "确定"-->    <!--app:amb_text_color = "@color/black"-->    <!--app:amb_text_size = "14sp"-->    <!--app:aml_color_background = "@color/trans" />-->    <!--</LinearLayout>-->    <!--</LinearLayout>-->    <!--</RelativeLayout>-->

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MineHeidouActivity">
+
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"/>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_main_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_background"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/heidou_back">
+
+            <TextView
+                android:id="@+id/text_balanceview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="嘿豆余额"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/text_balanceview"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+        </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:layout_below="@+id/rl_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+                        <RelativeLayout
+                            android:id="@+id/relat_diamondexchange"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            >
+
+                                <TextView
+                                    android:paddingLeft="5dp"
+                                    android:id="@+id/tv_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="111"
+                                    android:layout_centerInParent="true"/>
+
+                                <ImageView
+                                    android:id="@+id/Imagediamondexchange"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/xianjinchongzhipp"
+                                    android:layout_toLeftOf="@+id/tv_title"
+                                    android:layout_centerInParent="true"
+                                    />
+
+                            <ImageView
+                                android:id="@+id/iv_mark"
+                                android:src="#3cccb0"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="58dp"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relat_diamondexchange2"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            >
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:id="@+id/tv_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="111"
+                                android:layout_centerInParent="true"/>
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:id="@+id/Imagediamondexchange2"
+                                android:src="@drawable/xianjinchongzhipp"
+                                android:layout_toLeftOf="@+id/tv_title2"
+                                />
+                            <ImageView
+                                android:id="@+id/iv_mark2"
+                                android:src="#3cccb0"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="58dp"
+                                android:layout_centerHorizontal="true"/>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#f0f2f1">
+                    <ImageView
+                        android:id="@+id/radiobutton"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/checkdpoint"
+                        android:layout_toLeftOf="@+id/textconvertible"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"/>
+                    <TextView
+                        android:id="@+id/textconvertible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="可兑换钻石：0"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="264dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="22dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

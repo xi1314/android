@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--<clip xmlns:android = "http://schemas.android.com/apk/res/android"-->    <!--android:clipOrientation = "horizontal"-->    <!--android:gravity = "center">-->    <!--<clip-->        <!--android:clipOrientation = "vertical"-->        <!--android:gravity = "center">-->        <!--<shape>-->            <!--<solid android:color = "@color/blue" />-->            <!--<corners android:radius = "2dp" />-->        <!--</shape>-->    <!--</clip>--><!--</clip>-->
+<clip xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:clipOrientation = "horizontal|vertical"
+    android:gravity = "center">
+    <shape>
+        <solid android:color = "@color/blue" />
+        <corners android:radius = "2dp" />
+    </shape>
+</clip>

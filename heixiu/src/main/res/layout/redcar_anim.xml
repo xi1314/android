@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_redcar"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="244.5dp"
+        android:layout_height="97.5dp"
+        android:layout_marginLeft="55.5dp"
+        android:src="@drawable/redcar" />
+
+    <ImageView
+        android:id="@+id/behindWheel"
+        android:layout_width="24dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="183dp"
+        android:layout_marginTop="55.5dp"
+        android:src="@drawable/redcar_behind1" />
+
+    <ImageView
+        android:id="@+id/afterwheel"
+        android:layout_width="12dp"
+        android:layout_height="25.5dp"
+        android:layout_marginLeft="264.9dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/redcar_afterwheel1" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="95dp"-->
+    <!--android:layout_marginLeft="-45dp"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_toRightOf="@+id/car"-->
+    <!--android:src="@mipmap/light1" />-->
+
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="133dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="19.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/redlight" />
+</RelativeLayout>

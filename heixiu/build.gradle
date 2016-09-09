@@ -1,0 +1,211 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    useLibrary 'org.apache.http.legacy'
+
+
+    defaultConfig {
+        applicationId 'com.remair.heixiu'
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 23
+        versionName "2.2.2"
+        multiDexEnabled = true
+
+        buildConfigField("String", "versionNumber", "\"${versionName}\"")
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'InvalidPackage'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude '.readme'
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/README.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    signingConfigs {
+
+        release {
+            storeFile file("heixiu.jks")
+            storePassword "856194"
+            keyAlias "heixiu"
+            keyPassword "856194"
+        }
+
+        debug {
+            storeFile file("heixiu.jks")
+            storePassword "856194"
+            keyAlias "heixiu"
+            keyPassword "856194"
+        }
+    }
+
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+
+    flavorDimensions "app", "server"
+
+    productFlavors {
+
+        we {
+            dimension "app"
+
+            applicationId 'com.remair.we'
+        }
+
+        heixiu {
+            dimension "app"
+        }
+
+        //测试服
+        offline {
+
+            dimension "server"
+
+            //是否为管理员版本
+            buildConfigField "boolean", "IS_ADMIN", "true"
+        }
+
+        //正式服
+        online {
+
+            dimension "server"
+
+            //是否为管理员版本
+            buildConfigField "boolean", "IS_ADMIN", "false"
+        }
+
+        //管理员版本
+        admin {
+
+            dimension "server"
+            versionName "${android.defaultConfig.versionName}-管理员"
+
+            //是否为管理员版本
+            buildConfigField "boolean", "IS_ADMIN", "true"
+        }
+
+        applicationVariants.all { variant ->
+            switch (variant.flavorName) {
+                case "heixiuAdmin":
+                    variant.buildConfigField("String", "DOMAIN_NAME",
+//                            "\"http://192.168.10.146:8080/hx/\"");
+                            "\"http://101.201.141.212:8080/hx/\"");
+                    break
+                case "heixiuOffline":
+                    variant.buildConfigField("String", "DOMAIN_NAME",
+                            "\"http://apitest.imheixiu.com/hx/\"");
+                    break
+                case "heixiuOnline":
+                    variant.buildConfigField("String", "DOMAIN_NAME",
+                            "\"http://api.imheixiu.com/hx/\"");
+                    break
+                case "weAdmin":
+                    variant.buildConfigField("String", "DOMAIN_NAME",
+                            "\"http://101.201.141.212:8080/hx/\"");
+                    break
+                case "weOffline":
+                    variant.buildConfigField("String", "DOMAIN_NAME",
+                            "\"http://apitest.imheixiu.com/hx/\"");
+                    break
+                case "weOnline":
+                    variant.buildConfigField("String", "DOMAIN_NAME",
+                            "\"http://api.imheixiu.com/hx/\"");
+                    break
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.aliyun.dpa:oss-android-sdk:2.2.0'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.0@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.5.0@aar'
+    compile 'com.zhy:okhttputils:2.3.8'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile project(':LibModules:archangellib')
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //    compile 'com.alibaba:fastjson:1.1.54.android'
+    //    compile 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    debugCompile 'com.apkfuns.logutils:library:1.4.2'
+    releaseCompile 'com.apkfuns.logutils:logutils-no-op:1.4.2.1'
+    compile 'com.github.tianzhijiexian:CommonAdapter:1.1.9'
+    compile 'com.jakewharton:butterknife:8.3.0'
+    apt 'com.jakewharton:butterknife-compiler:8.3.0'
+    //    compile 'com.bigkoo:convenientbanner:2.0.5'
+}

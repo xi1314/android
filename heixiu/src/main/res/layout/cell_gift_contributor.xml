@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cell_useritem_container"
+    android:background="@color/trans">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/trans_white_50"/>
+
+    <TextView
+        android:id="@+id/txt_rank"
+        style="@style/gift_contributor_rank_normal1"
+        android:text=""
+        android:textStyle="bold"/>
+
+    <include
+        android:id="@+id/contributor_info_container"
+        layout="@layout/cell_contributor_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txt_rank"/>
+</RelativeLayout>

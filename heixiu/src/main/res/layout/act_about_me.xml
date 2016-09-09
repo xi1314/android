@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_laucher" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="版本号1.0.0"
+        android:textColor="@color/text_name" />
+
+    <studio.archangel.toolkitv2.views.AngelDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:src="#cdcdcd" />
+
+    <studio.archangel.toolkitv2.views.AngelOptionItem
+        android:id="@+id/protocol_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        app:aml_color_background="@color/white"
+        app:aoi_icon_back="@color/trans"
+        app:aoi_icon_src="@color/trans"
+        app:aoi_icon_title_spacing="-15dp"
+        app:aoi_icon_visible="true"
+        app:aoi_text_color="@color/text_name"
+        app:aoi_title="嘿秀用户许可及服务协议"
+        app:aoi_title_text_size="16sp" />
+
+    <studio.archangel.toolkitv2.views.AngelDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="#cdcdcd" />
+</LinearLayout>

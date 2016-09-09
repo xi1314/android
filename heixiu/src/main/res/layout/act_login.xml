@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.remair.heixiu.view.PanningView
+            android:id="@+id/pan_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg1"
+            app:panningDurationInMs="20000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="98dp"
+                android:src="@drawable/icon_login"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="手机号"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingBottom="165dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@drawable/shape_cursor_white"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:id="@+id/icon_delete_phone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/icon_delete"
+                        android:visibility="invisible"/>
+
+                    <studio.archangel.toolkitv2.views.AngelDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginTop="34dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="@string/register_name_digits"
+                        android:gravity="center"
+                        android:hint="密码"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:paddingBottom="110dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@drawable/shape_cursor_white"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_visible"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="45dp"
+                        android:src="@drawable/selector_visible"
+                        android:textColor="#999999"/>
+
+                    <ImageView
+                        android:id="@+id/icon_delete_password"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/icon_delete"
+                        android:visibility="invisible"/>
+
+                    <studio.archangel.toolkitv2.views.AngelDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginTop="34dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/forget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="134dp"
+                    android:text="忘记密码？"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <studio.archangel.toolkitv2.views.AngelMaterialButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="318dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/forget"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:minHeight="42dp"
+                    app:amb_text="登录"
+                    app:amb_text_color="@color/white"
+                    app:amb_text_size="17sp"
+                    app:aml_border="round"
+                    app:aml_color_background="#3cccb0"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:padding="12dp"
+                android:text="立即注册"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_weibo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/selector_weibo"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/selector_qq"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/selector_weixin"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

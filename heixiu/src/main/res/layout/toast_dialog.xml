@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/shape_button_white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="封禁ID："/>
+
+        <TextView
+            android:id="@+id/close_id"
+            android:textColor="@color/red"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="222222"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="封禁主播："/>
+
+        <TextView
+            android:id="@+id/close_nickname"
+            android:textColor="@color/red"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="222222"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="封禁原因："/>
+
+        <TextView
+            android:id="@+id/close_reason"
+            android:textColor="@color/red"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="222222"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="封禁时间："/>
+
+        <TextView
+            android:id="@+id/close_day"
+            android:textColor="@color/red"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="222222"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/close_confirm"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_red"
+        android:layout_width="wrap_content"
+        android:padding="6dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="确认封禁"/>
+</LinearLayout>

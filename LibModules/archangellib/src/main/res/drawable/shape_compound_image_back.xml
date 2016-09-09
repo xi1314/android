@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:id = "@+id/shape_compound_image_back_oval">
+        <shape android:shape = "oval">
+            <solid android:color = "@color/trans" />
+            <stroke
+                android:width = "0.5dp"
+                android:color = "@color/blue" />
+        </shape>
+    </item>
+</layer-list>

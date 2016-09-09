@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"/>
+
+    <LinearLayout
+        android:id="@+id/act_record_balck_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/blank_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="你真是一个交际圣手"
+            android:textColor="@color/text_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:text="还没有拉黑过任何人"
+            android:textColor="@color/text_grey" />
+    </LinearLayout>
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptrFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

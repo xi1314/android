@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/item_person_convert"/>
+
+        <ImageButton
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans"
+            android:padding="6dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/add_friend"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_secret"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="52dp"
+        android:src="@drawable/secret_ing"
+        android:layout_height="14dp"/>
+
+    <ImageView
+        android:id="@+id/iv_public"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="52dp"
+        android:src="@drawable/public_ing"
+        android:layout_height="14dp"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+</RelativeLayout>

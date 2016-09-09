@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_chat_pre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/chat_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:id="@+id/rl_lan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:background="@drawable/shape_main_background">
+
+            <ImageView
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/white_arrow"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="wsk"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_load_more"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/fl_chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_chat_in"
+            android:layout_below="@+id/rl_lan"
+            android:layout_gravity="center">
+
+            <ListView
+                android:id="@+id/chat_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null">
+
+            </ListView>
+
+            <FrameLayout
+                android:id="@+id/fl_point"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:background="@color/red_color">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_chat_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/icon_delete"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="尚未关注此用户，请勿轻易送礼或加微信以防欺骗！"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_chat"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_corner_gray"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_chat_sount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/anim_chat"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_chat_sount"
+                        android:layout_marginTop="30dp"
+                        android:text="手指上滑，取消发送"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <!--聊天框-->
+        <LinearLayout
+            android:id="@+id/ll_chat_in"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/rl_bott"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/chat_speed"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/chat_speech"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/chat_msg_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect_round_white_rent"
+                android:gravity="center_vertical"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_down"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_chat"
+                android:gravity="center"
+                android:text="按住说话"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/chat_emoji"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/chat_emoji"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/chat_gift"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/add_chat"/>
+
+            <TextView
+                android:id="@+id/chat_message_send"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_main_background"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/text_name"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bott"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <com.remair.heixiu.emoji.SmileLayout
+                android:id="@+id/ll_emojis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></com.remair.heixiu.emoji.SmileLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_gift_pad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_chat_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recy_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/act_live_rv_chat2"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:cacheColorHint="@color/trans"
+                        android:clickable="false"
+                        android:divider="@color/trans"
+                        android:focusable="false"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:transcriptMode="normal"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <!--礼物-->
+            <include
+                android:id="@+id/chat_gift_all_pad"
+                layout="@layout/gift_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_background"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_background"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_give"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/view_liv_send_button"
+            android:background="@drawable/shape_oval_main"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_give1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="送出"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_count1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_give1"
+                android:layout_gravity="center_horizontal"
+                android:text="66"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_give2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/ll_give"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="-15dp"
+            android:layout_toLeftOf="@+id/view_liv_send_button"
+            android:background="@drawable/shape_oval_main"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_give2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="送出"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_count2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_give1"
+                android:layout_gravity="center_horizontal"
+                android:text="188"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_give3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/ll_give2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="-50dp"
+            android:layout_toLeftOf="@+id/view_liv_send_button"
+            android:background="@drawable/shape_oval_main"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_give3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="送出"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_count3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_give1"
+                android:layout_gravity="center_horizontal"
+                android:text="520"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_give4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/ll_give3"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginRight="-90dp"
+            android:layout_toLeftOf="@+id/view_liv_send_button"
+            android:background="@drawable/shape_oval_main"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_give4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="送出"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_count4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_give1"
+                android:layout_gravity="center_horizontal"
+                android:text="1314"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/view_liv_send_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_backgroundtwo"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/tv_sendlian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连送"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sendlian"
+                    android:layout_centerHorizontal="true"
+                    android:text="30"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

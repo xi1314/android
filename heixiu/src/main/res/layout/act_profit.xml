@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/common_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:background="@drawable/shape_main_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:shadowColor="#4c000000"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="累计收益"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/act_profit_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:shadowColor="#4c000000"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:text="¥0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginTop="18dp">
+
+            <com.remair.heixiu.view.LineGraphicView
+                android:id="@+id/line_graphic"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingBottom="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="78dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/datamoney"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textSize="11sp"
+                        android:textColor="@color/text_name"
+                        android:text="今日可提现金额"/>
+
+                    <TextView
+                        android:id="@+id/act_profit_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#76e3ac"
+                        android:text="0元"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/my_income_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/keyongmoney"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textSize="11sp"
+                        android:textColor="@color/text_name"
+                        android:text="可提现金额"/>
+
+                    <TextView
+                        android:id="@+id/act_profit_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#76e3ac"
+                        android:text="0元"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ll_my_case"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:background="@drawable/selector_shape_zuanshi"
+            android:textSize="17sp"
+            android:textColor="@color/text_grey"
+            android:text="存在感兑换"/>
+
+        <studio.archangel.toolkitv2.views.AngelMaterialButton
+            android:id="@+id/act_profit_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="12dp"
+            android:minHeight="42dp"
+            app:amb_text="提现"
+            app:amb_text_color="@color/white"
+            app:amb_text_size="17sp"
+            app:aml_border="round"
+            app:aml_color_background="#43d38b"/>
+
+        <TextView
+            android:id="@+id/protocol"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_des"
+            android:text="@string/profit"/>
+    </LinearLayout>
+</ScrollView>

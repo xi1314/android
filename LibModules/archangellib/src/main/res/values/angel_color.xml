@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Third Party Lib Color-->
+    <color name = "background_tab_pressed">#6633B5E5</color>
+    <!--Transparent-->
+    <color name = "transparent">#00000000</color>
+    <color name = "trans">#00000000</color>
+    <color name = "trans_75">#bF000000</color>
+    <color name = "trans_50">#7F000000</color>
+    <color name = "trans_25">#4F000000</color>
+    <color name = "trans_12">#1F000000</color>
+    <color name = "trans_6">#0B000000</color>
+    <color name = "trans_white_75">#bFFFFFFF</color>
+    <color name = "trans_white_50">#7FFFFFFF</color>
+    <color name = "trans_white_35">#5FFFFFFF</color>
+    <color name = "trans_white_25">#3FFFFFFF</color>
+    <color name = "trans_white_12">#1FFFFFFF</color>
+    <color name = "trans_white_6">#0BFFFFFF</color>
+    <!--White, Grey & Black-->
+    <color name = "white">#ffffff</color>
+    <color name = "white_dark">#fff2f2f2</color>
+    <color name = "grey">#ffd5d5d5</color>
+    <color name = "grey_light">#ffe8e8e8</color>
+    <color name = "grey_dark">#ffb9b9b9</color>
+    <color name = "black">#ff444343</color>
+    <color name = "black_light">#ff585858</color>
+    <!--Text Color-->
+    <color name = "text_black">#4c4b4b</color>
+    <color name = "text_white">#ffffff</color>
+    <color name = "text_grey">#969896</color>
+    <color name="text_name">#333333</color>
+    <!--Main Color-->
+    <color name = "bm_progress">#f289a2</color>
+    <color name = "red">#f36a62</color>
+    <color name = "orange">#f1914f</color>
+    <color name = "yellow">#e3b342</color>
+    <color name = "green">#33bf7b</color>
+    <color name = "blue">#5babeb</color>
+    <color name = "blue_light">#79c5ce</color>
+    <color name = "purple">#9e8ccb</color>
+    <!--Others-->
+    <color name = "dust">#c4ab6f</color>
+    <color name = "khaki_dark">#af7b32</color>
+    <color name = "khaki">#d8b86d</color>
+    <color name = "indigo">#e7f4f6</color>
+    <!--Color for Widgets-->
+    <color name = "divider_normal">#dfdfdd</color>
+    <color name = "disabled">#d5d5d5</color>
+    <color name = "switch_back">#42000000</color>
+    <color name="color_999">#999999</color>
+</resources>

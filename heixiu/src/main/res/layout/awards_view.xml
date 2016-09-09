@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="156dp"
+    android:layout_height="136dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lighting"/>
+    <ImageView
+        android:id="@+id/iv_bat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/batwin"/>
+    <ImageView
+        android:id="@+id/iv_konfetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/konfetti1"
+        android:layout_gravity="top"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"
+            android:textColor="@color/hx_main"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="倍"
+            android:textSize="20sp"
+            android:textColor="@color/hx_main"
+            android:layout_toRightOf="@+id/tv_times"
+            />
+    </RelativeLayout>
+</FrameLayout>

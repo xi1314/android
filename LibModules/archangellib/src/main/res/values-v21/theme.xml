@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name = "AppBaseTheme" parent = "android:Theme.Holo.Light">
+		<!-- API 21 theme customizations can go here. -->
+	</style>
+	<!--<style name = "AngelTheme" parent = "android:Theme.Holo.Light">-->
+		<!--&lt;!&ndash;<item name="android:colorEdgeEffect">@color/trans</item>&ndash;&gt;-->
+		<!--&lt;!&ndash; ListView样式&ndash;&gt;-->
+		<!--<item name = "android:listViewStyle">@style/AngelTheme.ListViewTheme</item>-->
+		<!--&lt;!&ndash; ScrollView样式&ndash;&gt;-->
+		<!--<item name = "android:scrollViewStyle">@style/AngelTheme.ScrollViewTheme</item>-->
+		<!--&lt;!&ndash; TextView样式&ndash;&gt;-->
+		<!--<item name = "android:textViewStyle">@style/AngelTheme.TextViewTheme</item>-->
+		<!--&lt;!&ndash; EditText样式&ndash;&gt;-->
+		<!--<item name = "android:editTextStyle">@style/AngelTheme.EditTextTheme</item>-->
+		<!--&lt;!&ndash; Scrollbar样式&ndash;&gt;-->
+		<!--<item name = "android:scrollbarThumbVertical">@drawable/shape_scrollbar_vertical</item>-->
+		<!--<item name = "android:scrollbarThumbHorizontal">@drawable/shape_scrollbar_horizontal</item>-->
+		<!--<item name = "android:scrollbarStyle">outsideOverlay</item>-->
+		<!--&lt;!&ndash; Actionbar下面阴影的样式&ndash;&gt;-->
+		<!--<item name = "android:windowContentOverlay">@drawable/shape_shadow_actionbar</item>-->
+		<!--&lt;!&ndash; Actionbar样式&ndash;&gt;-->
+		<!--<item name = "android:actionBarStyle">@style/AngelTheme.ActionBarTheme</item>-->
+		<!--&lt;!&ndash; Activity切换动画&ndash;&gt;-->
+		<!--<item name = "android:windowAnimationStyle">@style/AngelTheme.AngelActivityAnimation</item>-->
+		<!--&lt;!&ndash; Actionbar tabbar样式&ndash;&gt;-->
+		<!--&lt;!&ndash;<item name = "android:actionBarWidgetTheme">@style/AngelActionBarTabBar</item>&ndash;&gt;-->
+		<!--<item name = "android:actionBarDivider">@color/trans</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.DarkActionBar" parent = "android:Theme.Holo.Light.DarkActionBar">-->
+		<!--&lt;!&ndash; ListView样式&ndash;&gt;-->
+		<!--<item name = "android:listViewStyle">@style/AngelTheme.ListViewTheme</item>-->
+		<!--&lt;!&ndash; TextView样式&ndash;&gt;-->
+		<!--<item name = "android:textViewStyle">@style/AngelTheme.TextViewTheme</item>-->
+		<!--&lt;!&ndash; Scrollbar样式&ndash;&gt;-->
+		<!--<item name = "android:scrollbarThumbVertical">@drawable/shape_scrollbar_vertical</item>-->
+		<!--<item name = "android:scrollbarThumbHorizontal">@drawable/shape_scrollbar_horizontal</item>-->
+		<!--<item name = "android:scrollbarStyle">outsideOverlay</item>-->
+		<!--&lt;!&ndash; Actionbar下面阴影的样式&ndash;&gt;-->
+		<!--<item name = "android:windowContentOverlay">@drawable/shape_shadow_actionbar</item>-->
+		<!--&lt;!&ndash; Actionbar样式&ndash;&gt;-->
+		<!--<item name = "android:actionBarStyle">@style/AngelTheme.ActionBarTheme</item>-->
+		<!--&lt;!&ndash; Activity切换动画&ndash;&gt;-->
+		<!--<item name = "android:windowAnimationStyle">@style/AngelTheme.AngelActivityAnimation</item>-->
+		<!--&lt;!&ndash; Actionbar tabbar样式&ndash;&gt;-->
+		<!--&lt;!&ndash;<item name = "android:actionBarWidgetTheme">@style/AngelActionBarTabBar</item>&ndash;&gt;-->
+		<!--<item name = "android:actionBarDivider">@color/trans</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.NoActionBar" parent = "android:Theme.Holo.Light.NoActionBar">-->
+		<!--&lt;!&ndash; ListView样式&ndash;&gt;-->
+		<!--<item name = "android:listViewStyle">@style/AngelTheme.ListViewTheme</item>-->
+		<!--&lt;!&ndash; TextView样式&ndash;&gt;-->
+		<!--<item name = "android:textViewStyle">@style/AngelTheme.TextViewTheme</item>-->
+		<!--&lt;!&ndash; Scrollbar样式&ndash;&gt;-->
+		<!--<item name = "android:scrollbarThumbVertical">@drawable/shape_scrollbar_vertical</item>-->
+		<!--<item name = "android:scrollbarThumbHorizontal">@drawable/shape_scrollbar_horizontal</item>-->
+		<!--<item name = "android:scrollbarStyle">outsideOverlay</item>-->
+		<!--&lt;!&ndash; Actionbar下面阴影的样式&ndash;&gt;-->
+		<!--<item name = "android:windowContentOverlay">@drawable/shape_shadow_actionbar</item>-->
+		<!--&lt;!&ndash; Actionbar样式&ndash;&gt;-->
+		<!--<item name = "android:actionBarStyle">@style/AngelTheme.ActionBarTheme</item>-->
+		<!--&lt;!&ndash; Activity切换动画&ndash;&gt;-->
+		<!--<item name = "android:windowAnimationStyle">@style/AngelTheme.AngelActivityAnimation</item>-->
+		<!--&lt;!&ndash; Actionbar tabbar样式&ndash;&gt;-->
+		<!--&lt;!&ndash;<item name = "android:actionBarWidgetTheme">@style/AngelActionBarTabBar</item>&ndash;&gt;-->
+		<!--<item name = "android:actionBarDivider">@color/trans</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.Dialog" parent = "android:Theme.Holo.Light.Dialog">-->
+		<!--&lt;!&ndash; ListView样式&ndash;&gt;-->
+		<!--<item name = "android:listViewStyle">@style/AngelTheme.ListViewTheme</item>-->
+		<!--&lt;!&ndash; TextView样式&ndash;&gt;-->
+		<!--<item name = "android:textViewStyle">@style/AngelTheme.TextViewTheme</item>-->
+		<!--&lt;!&ndash; Scrollbar样式&ndash;&gt;-->
+		<!--<item name = "android:scrollbarThumbVertical">@drawable/shape_scrollbar_vertical</item>-->
+		<!--<item name = "android:scrollbarThumbHorizontal">@drawable/shape_scrollbar_horizontal</item>-->
+		<!--<item name = "android:scrollbarStyle">outsideOverlay</item>-->
+		<!--&lt;!&ndash; Actionbar下面阴影的样式&ndash;&gt;-->
+		<!--<item name = "android:windowContentOverlay">@drawable/shape_shadow_actionbar</item>-->
+		<!--&lt;!&ndash; Actionbar样式&ndash;&gt;-->
+		<!--<item name = "android:actionBarStyle">@style/AngelTheme.ActionBarTheme</item>-->
+		<!--&lt;!&ndash; Activity切换动画&ndash;&gt;-->
+		<!--<item name = "android:windowAnimationStyle">@style/AngelTheme.AngelActivityAnimation</item>-->
+		<!--&lt;!&ndash; Actionbar tabbar样式&ndash;&gt;-->
+		<!--&lt;!&ndash;<item name = "android:actionBarWidgetTheme">@style/AngelActionBarTabBar</item>&ndash;&gt;-->
+		<!--<item name = "android:actionBarDivider">@color/trans</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.ListViewTheme" parent = "@android:style/Widget.Holo.Light.ListView">-->
+		<!--<item name = "android:fadingEdge">none</item>-->
+		<!--<item name = "android:overScrollMode">never</item>-->
+		<!--<item name = "android:divider">@color/divider_normal</item>-->
+		<!--<item name = "android:dividerHeight">1px</item>-->
+		<!--<item name = "android:fadingEdgeLength">0dp</item>-->
+		<!--<item name = "android:listSelector">@color/trans</item>-->
+		<!--<item name = "android:cacheColorHint">@color/trans</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.ScrollViewTheme" parent = "@android:style/Widget.Holo.Light.ScrollView">-->
+		<!--<item name = "android:fadingEdge">none</item>-->
+		<!--<item name = "android:overScrollMode">never</item>-->
+		<!--<item name = "android:fadingEdgeLength">0dp</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.TextViewTheme" parent = "android:Widget.Holo.Light.TextView">-->
+		<!--<item name = "android:textIsSelectable">false</item>-->
+		<!--<item name = "android:textColorHint">@color/trans_25</item>-->
+		<!--<item name = "android:textColor">@color/text_black</item>-->
+		<!--<item name = "android:textAppearance">@android:style/TextAppearance.Holo.Small</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.EditTextTheme" parent = "android:Widget.Holo.Light.EditText">-->
+		<!--<item name = "android:textColorHint">@color/trans_25</item>-->
+		<!--<item name = "android:textColor">@color/text_black</item>-->
+		<!--<item name = "android:textAppearance">@android:style/TextAppearance.Holo.Medium</item>-->
+		<!--<item name = "android:textSize">14sp</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.ActionBarTheme" parent = "@android:style/Widget.Holo.Light.ActionBar.Solid">-->
+		<!--<item name = "android:background">@color/white</item>-->
+		<!--<item name = "android:backgroundStacked">@color/white</item>-->
+		<!--<item name = "android:backgroundSplit">@color/white</item>-->
+	<!--</style>-->
+
+	<!--<style name = "AngelTheme.AngelActivityAnimation" parent = "@android:style/Animation.Activity">-->
+		<!--<item name = "android:activityOpenEnterAnimation">@anim/act_slide_in_from_right</item>-->
+		<!--<item name = "android:activityOpenExitAnimation">@anim/act_slide_out_from_left</item>-->
+		<!--<item name = "android:activityCloseEnterAnimation">@anim/act_slide_in_from_left</item>-->
+		<!--<item name = "android:activityCloseExitAnimation">@anim/act_slide_out_from_right</item>-->
+	<!--</style>-->
+	<!--<style name = "AngelActionBarTabBar" parent = "@android:style/Widget.Holo.ActionBar.TabBar">-->
+	<!--<item name = "android:divider">@null</item>-->
+	<!--<item name = "android:showDividers">middle</item>-->
+	<!--<item name = "android:dividerPadding">0dp</item>-->
+	<!--</style>-->
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/item_huifang"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friend_list_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/frag_show_list_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/blank_bg"
+            android:text="您还没有直播哦"
+            android:gravity="center"
+            android:drawablePadding="20dp"
+            android:textColor="@color/text_grey"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

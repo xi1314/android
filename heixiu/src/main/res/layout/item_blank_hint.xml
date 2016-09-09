@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_blank1"
+        style="@style/blank_hint"
+        android:maxWidth="260dp"
+        tools:text="sfsdfsdfdf"/>
+
+    <TextView
+        android:id="@+id/tv_blank2"
+        android:maxWidth="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/give_zuan"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:text="您可以用钻石购买礼物送心仪的主播,还可以提升自己的等级来变得与众不同"/>
+</LinearLayout>

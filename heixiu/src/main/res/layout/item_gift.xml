@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_gift"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_gift_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_oval_stroke_main">
+
+        <TextView
+            android:id="@+id/tv_envent_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_oval_main"
+            android:gravity="center"
+            android:text="99"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <!-- <TextView
+             android:id="@+id/tv_transfer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="5dp"
+             android:background="@drawable/shape_liansong"
+             android:padding="1dp"
+             android:text="连"
+             android:textColor="@color/hx_main"
+             android:textSize="10sp" />-->
+
+        <ImageView
+            android:id="@+id/iv_encourage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/encourage_flag"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_gift_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            app:placeholderImage="@drawable/icon_gift"
+            app:roundAsCircle="false"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_gift_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/iv_species"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/item_gift_text"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/iv_species"
+                android:text=""
+                android:textColor="@color/greyish_white"
+                android:textSize="9sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

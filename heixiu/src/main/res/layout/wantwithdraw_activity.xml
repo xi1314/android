@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/wantwithdeaw"/>
+
+            <TextView
+                android:id="@+id/tv_this"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:text="本月已提现"/>
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_this"
+                android:layout_centerHorizontal="true"
+                android:text="222元"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_attesation_dialg">
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/withdraw_amount"/>
+
+            <EditText
+                android:id="@+id/et_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/tv_amount"
+                android:background="@drawable/shape_attestion_backround"
+                android:inputType="phone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tips1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/withdraw_message1"/>
+
+        <TextView
+            android:id="@+id/tv_tips2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/withdraw_message2"/>
+
+        <TextView
+            android:id="@+id/tv_tips3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/withdraw_message3"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:id="@+id/iv_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/checkbox_hint"/>
+
+            <TextView
+                android:id="@+id/labor_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_des"
+                android:layout_toRightOf="@+id/iv_checkbox"
+                android:text="@string/laboragreement"/>
+        </RelativeLayout>
+
+        <studio.archangel.toolkitv2.views.AngelMaterialButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="42dp"
+            app:amb_text="提交"
+            app:amb_text_color="@color/text_white"
+            app:amb_text_size="17sp"
+            app:aml_border="round"
+            app:aml_color_background="@color/hx_main"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_with_cusses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_succes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/success"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_succes"
+            android:text="@string/succes"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

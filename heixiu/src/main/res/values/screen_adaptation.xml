@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titlebar_bg"
+        type="drawable">@drawable/shape_main_background
+    </item>
+    <item name="titlebar_height"
+        type="dimen">@dimen/titlebar_layout_height
+    </item>
+
+</resources>

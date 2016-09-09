@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pic_new_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            app:placeholderImage="@drawable/icon_avatar_default"
+            app:roundAsCircle="true"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_chat_item_content"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_toLeftOf="@id/iv_avatar"
+            android:background="@drawable/chat_myself"
+            android:scaleType="fitXY"/>
+
+        <ProgressBar
+            android:id="@+id/pb_status"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_chat_item_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_msg_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_chat_item_content"
+            android:clickable="true"
+            android:src="@drawable/msg_resend"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

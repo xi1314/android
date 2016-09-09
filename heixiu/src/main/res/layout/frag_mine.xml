@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#eeeeee">
+
+            <include layout="@layout/person_message"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/trans">
+
+                <studio.archangel.toolkitv2.views.AngelOptionItem2
+                    android:id="@+id/aoi_guanzhu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:minHeight="50dp"
+                    app:aml_color_background="@color/white"
+                    app:aoi_arrow_visible="false"
+                    app:aoi_icon_visible="false"
+                    app:aoi_subtitle="关注"
+                    app:aoi_subtitle_text_size="13sp"
+                    app:aoi_text_color="@color/text_name"
+                    app:aoi_title="0"
+                    app:aoi_title_text_size="18sp">
+
+                </studio.archangel.toolkitv2.views.AngelOptionItem2>
+
+                <studio.archangel.toolkitv2.views.AngelOptionItem2
+                    android:id="@+id/aoi_fensi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:minHeight="50dp"
+                    app:aml_color_background="@color/white"
+                    app:aoi_arrow_visible="false"
+                    app:aoi_icon_visible="false"
+                    app:aoi_subtitle="粉丝"
+                    app:aoi_subtitle_text_size="13sp"
+                    app:aoi_text_color="@color/text_name"
+                    app:aoi_title="0"
+                    app:aoi_title_text_size="18sp">
+
+                </studio.archangel.toolkitv2.views.AngelOptionItem2>
+
+                <studio.archangel.toolkitv2.views.AngelOptionItem2
+                    android:id="@+id/aoi_zhibo"
+                    android:visibility="visible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:minHeight="50dp"
+                    app:aml_color_background="@color/white"
+                    app:aoi_arrow_visible="false"
+                    app:aoi_icon_visible="false"
+                    app:aoi_subtitle="直播"
+                    app:aoi_subtitle_text_size="13sp"
+                    app:aoi_text_color="@color/text_name"
+                    app:aoi_title="0"
+                    app:aoi_title_text_size="18sp"/>
+            </LinearLayout>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/listbillboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_icon_back="@color/trans"
+                app:aoi_icon_padding="0dp"
+                app:aoi_icon_size="20dp"
+                app:aoi_icon_src="@drawable/listbillboard"
+                app:aoi_icon_title_spacing="10dp"
+                app:aoi_icon_visible="true"
+                app:aoi_text_color="#333333"
+                app:aoi_title="榜单"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:id="@+id/divider"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/frag_mine_profit"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_icon_back="@color/trans"
+                app:aoi_icon_padding="0dp"
+                app:aoi_icon_size="20dp"
+                app:aoi_icon_src="@drawable/icon_profit"
+                app:aoi_icon_title_spacing="10dp"
+                app:aoi_icon_visible="true"
+                app:aoi_text_color="#333333"
+                app:aoi_text_color_content="@color/text_des"
+                app:aoi_title="收益"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/frag_mine_diamond"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_content="0"
+                app:aoi_icon_back="@color/trans"
+                app:aoi_icon_padding="0dp"
+                app:aoi_icon_size="20dp"
+                app:aoi_icon_src="@drawable/icon_diamond"
+                app:aoi_icon_title_spacing="12dp"
+                app:aoi_icon_visible="true"
+                app:aoi_text_color="#333333"
+                app:aoi_text_color_content="@color/text_des"
+                app:aoi_title="钻石"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/frag_mine_new"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_content="0"
+                app:aoi_icon_back="@color/trans"
+                app:aoi_icon_padding="0dp"
+                app:aoi_icon_size="20dp"
+                app:aoi_icon_src="@drawable/icon_heidou"
+                app:aoi_icon_title_spacing="12dp"
+                app:aoi_icon_visible="true"
+                app:aoi_text_color="#333333"
+                app:aoi_text_color_content="@color/text_des"
+                app:aoi_title="嘿豆"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/frag_mine_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_icon_back="@color/trans"
+                app:aoi_icon_padding="0dp"
+                app:aoi_icon_size="20dp"
+                app:aoi_icon_src="@drawable/icon_setting"
+                app:aoi_icon_title_spacing="12dp"
+                app:aoi_icon_visible="true"
+                app:aoi_text_color="#333333"
+                app:aoi_title="设置"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="#cdcdcd"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

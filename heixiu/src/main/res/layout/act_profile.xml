@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <include layout="@layout/common_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="14dp"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/act_profile_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_icon_visible="false"
+                app:aoi_text_color="@color/text_name"
+                app:aoi_title="@string/headp_photo"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/trans"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/act_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_content=""
+                app:aoi_icon_visible="false"
+                app:aoi_text_color="@color/text_name"
+                app:aoi_text_color_content="@color/qing"
+                app:aoi_title="@string/nick_name"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/act_profile_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_arrow_gone="false"
+                app:aoi_icon_visible="false"
+                app:aoi_text_color="@color/text_name"
+                app:aoi_text_color_content="@color/qing"
+                app:aoi_title="@string/heixiu_id"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/trans"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/act_profile_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_content="@string/sig_con"
+                app:aoi_icon_visible="false"
+                app:aoi_text_color="@color/text_name"
+                app:aoi_text_color_content="@color/give_zuan"
+                app:aoi_title="@string/sign"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/trans"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/act_profile_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_icon_visible="false"
+                app:aoi_text_color="@color/text_name"
+                app:aoi_title="@string/grade"
+                app:aoi_title_text_size="16sp"/>
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="14dp"
+                android:background="@color/trans"
+                android:src="#cdcdcd"/>
+
+            <studio.archangel.toolkitv2.views.AngelOptionItem
+                android:id="@+id/act_profile_certification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:aml_color_background="@color/white"
+                app:aoi_icon_visible="false"
+                app:aoi_text_color="@color/text_name"
+                app:aoi_title="@string/certif"
+                app:aoi_title_text_size="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

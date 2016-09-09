@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/seqingbaoli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="色情暴力"/>
+
+        <RadioButton
+            android:id="@+id/guanggaochaunxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广告传销"/>
+
+        <RadioButton
+            android:id="@+id/zhengzhimigan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="政治敏感"/>
+
+        <RadioButton
+            android:id="@+id/qifanbanquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="侵犯版权"/>
+    </RadioGroup>
+
+    <Button
+
+        android:layout_marginTop="5dp"
+        android:id="@+id/queding"
+        android:background="@color/hx_main"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传截图并封号 "/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@color/hx_main"
+        android:id="@+id/quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消 "/>
+
+</LinearLayout>

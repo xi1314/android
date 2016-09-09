@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_round_corner_chat_white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/showattestion"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_correct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_attesation_dialg">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/shape_attestion_backround"
+            android:hint="@string/true_name"/>
+
+        <ImageView
+            android:id="@+id/iv_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/correct"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_attesation_dialg">
+
+        <EditText
+            android:id="@+id/et_id_cart"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:layout_margin="2dp"
+            android:inputType="number"
+            android:numeric="integer"
+            android:digits="0123456789xX"
+            android:background="@drawable/shape_attestion_backround"
+            android:hint="@string/id_number"/>
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/correct"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/cell_userlist_username"
+        android:text="@string/message1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/cell_userlist_username"
+        android:text="@string/message2"/>
+
+    <studio.archangel.toolkitv2.views.AngelMaterialButton
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:minHeight="42dp"
+        app:amb_text="确定"
+        app:amb_text_color="@color/text_name"
+        app:amb_text_size="17sp"
+        app:aml_border="round"
+        app:aml_color_background="@color/hx_main"/>
+
+</LinearLayout>

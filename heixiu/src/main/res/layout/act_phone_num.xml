@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"/>
+    <RelativeLayout
+
+        android:id="@+id/BindPhone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/act_phone_toptext"
+            android:textColor="#999999"
+            android:textSize="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/lineralyout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@+id/top_text"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:text=""
+                android:textColor="@color/text_name"/>
+
+            <TextView
+                android:id="@+id/tv_send1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_check"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="获取验证码"
+                android:textColor="@color/input_text_color"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/sure_etphone"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_below="@+id/lineralyout_phone"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="请输入正确的手机号"
+            android:textColor="#ff0e0e"
+            android:textSize="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_yanzhengma"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/lineralyout_phone"
+            android:layout_marginTop="26dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_check"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:text=""
+                android:textColor="@color/text_name"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:visibility="gone"
+            android:id="@+id/text_yanzhengma_hint"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_below="@+id/linearLayout_yanzhengma"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="验证码错误"
+            android:textColor="#ff0e0e"
+            android:textSize="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/linearLayout_yanzhengma"
+            android:layout_marginTop="26dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="请写登录密码 "
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="@color/text_name"
+
+                />
+
+            <ImageView
+                android:id="@+id/iv_visible"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/showpassword"
+                android:textColor="#999999"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_passwordhit"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_below="@+id/linearLayout_password"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="登录密码必须为数字和字母的混合且大于八个字符"
+            android:textColor="#ff0e0e"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seting_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_shouyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="@string/act_phone_toptext"
+                    android:textColor="#999999"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/et_new_phone1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="number"
+                        android:text=""
+                        android:textColor="@color/text_name"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_new_password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="输入新的密码"
+                    android:inputType="number"
+
+                    android:text=""
+                    android:textColor="@color/text_name"/>
+
+                <ImageView
+                    android:id="@+id/et_new_password1show"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/showpassword"
+                    android:visibility="gone"
+                    android:textColor="#999999"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seting_updatepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/orlder_passwordupdate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_password_orld2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="输入旧的密码"
+
+                android:text=""
+                android:textColor="@color/text_name"/>
+
+            <ImageView
+                android:id="@+id/iv_visible2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                android:src="@drawable/showpassword"
+                android:textColor="#999999"/>
+
+        </LinearLayout>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/orlder_passwordupdate"
+            android:background="@color/blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@+id/orlder_passwordupdate"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/et_password_new2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="输入新的密码"
+
+                android:text=""
+                android:textColor="@color/text_name"/>
+
+            <ImageView
+                android:id="@+id/et_password_new2show"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                android:src="@drawable/showpassword"
+                android:textColor="#999999"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

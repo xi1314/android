@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="537dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/paihangbangtankuang"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/gognxianzhipahangbang"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/act_live_hangup"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_oval_live_button">
+
+            <ImageView
+                android:id="@+id/b_close"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_hangup"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/cunzaigan_baoye1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/cunzaigan_baoye111"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal"
+                    app:placeholderImage="@drawable/icon_avatar_default"
+                    app:placeholderImageScaleType="fitXY"
+                    app:roundAsCircle="true"/>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/touxiangkuang1"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/cunzaigan_baoyeTextView111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:lines="1"
+                android:text="暂无人上榜"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贡献"
+                    android:textColor="@color/white"
+                    android:textSize="9.3dp"/>
+
+                <TextView
+                    android:id="@+id/meilizhi_textviewcunzaigan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#f5c823"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存在感"
+                    android:textColor="@color/white"
+                    android:textSize="9.3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl_gongxianzhipangdan"
+        android:layout_width="225dp"
+        android:layout_height="258dp"
+        android:layout_below="@+id/gognxianzhipahangbang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/frag_show_list_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="没有数据了"
+            android:visibility="gone"/>
+
+        <com.remair.heixiu.pull_rectclerview.RefreshRecyclerView
+            android:id="@+id/usercp_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/trans">
+
+        </com.remair.heixiu.pull_rectclerview.RefreshRecyclerView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_fragme"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Rl_gongxianzhipangdan"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff"
+        android:visibility="visible">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/wozhidaole1"
+            style="@style/cell_useritem_container1"
+            android:background="@color/trans"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我知道了"
+                android:textColor="#34784f"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/wozhidaole"
+            style="@style/cell_useritem_container1"
+            android:background="@color/trans">
+
+            <TextView
+                android:id="@+id/txt_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我"
+                android:textColor="#34784f"
+                android:textSize="11dp"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/cunzaigan_baoyehehe"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txt_rank"
+                app:placeholderImage="@drawable/icon_avatar_default"
+                app:placeholderImageScaleType="fitXY"
+                app:roundAsCircle="true"/>
+
+            <TextView
+                android:id="@+id/txt_rank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cunzaigan_baoyehehe"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="#34784f"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_rank3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txt_rank2"
+                android:text="名"
+                android:textColor="#34784f"
+                android:textSize="11dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贡献"
+                    android:textColor="#34784f"
+                    android:textSize="11dp"/>
+
+                <TextView
+                    android:id="@+id/meilizhi_textviewcunzaiganddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#34784f"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存在感"
+                    android:textColor="#34784f"
+                    android:textSize="11dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

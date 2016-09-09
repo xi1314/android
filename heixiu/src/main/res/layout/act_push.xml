@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:gravity="center"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"/>
+
+    <studio.archangel.toolkitv2.views.AngelDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="14dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/aoi_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_arrow_visible="false"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-12dp"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="直播消息提醒"
+            app:aoi_title_text_size="16sp"/>
+
+        <ImageView
+            android:id="@+id/push_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_push_on"/>
+    </RelativeLayout>
+
+    <studio.archangel.toolkitv2.views.AngelDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36sp"
+            android:gravity="center_vertical"
+            android:text="关闭某个人的消息提醒，不再收到TA的提示"
+            android:textColor="#999999"
+            android:textSize="13sp"/>
+    </FrameLayout>
+
+    <studio.archangel.toolkitv2.views.AngelDivider
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptrFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    <TextView
+        android:id="@+id/frag_show_list_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/blank_bg"
+        android:layout_gravity="center"
+        android:text="您还没有直播消息提醒哦"
+        android:textColor="@color/text_grey"
+        android:visibility="visible"/>
+
+</LinearLayout>

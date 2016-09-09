@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_chat_pre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/chat_color"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"/>
+
+    <RelativeLayout
+
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/text_Account_Security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="手机绑定"
+            app:aoi_arrow_gone="true"
+            app:aoi_content="未绑定"
+            android:background="@color/white"
+
+            app:aoi_title_text_size="16sp" />
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:src="#cdcdcd" />
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:layout_marginTop="2dp"
+            android:id="@+id/text_Account_password"
+            android:layout_below="@+id/text_Account_Security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="修改密码"
+            app:aoi_arrow_gone="false"
+            app:aoi_title_text_size="16sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

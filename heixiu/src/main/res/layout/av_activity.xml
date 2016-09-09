@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/av_screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requiresFadingEdge="none">
+
+    <com.tencent.av.opengl.ui.GLRootView
+        android:id="@+id/av_video_glview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/iv_cover_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fb_cover_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/graduallyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="L O A D I N G ..."
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/parent_rela"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/giftbig_fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/trans"
+                android:scaleType="fitCenter"/>
+
+            <com.remair.heixiu.heartlayout.HeartLayout
+                android:id="@+id/zan"
+                android:layout_width="150dp"
+                android:layout_height="350dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="65dp"
+                android:padding="0dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--//头像相关的布局-->
+                <include
+                    android:id="@+id/qav_top_bar"
+                    layout="@layout/qav_top_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"/>
+
+                <!--&lt;!&ndash; 其他布局 &#45;&#45;!>-->
+                <include
+                    android:id="@+id/qav_bottom_bar"
+                    layout="@layout/qav_bottom_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/qav_top_bar"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/act_live_hangup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_oval_live_button"
+                android:padding="7dp"
+                android:src="@drawable/icon_hangup"/>
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="62dp"
+                android:text="嘿秀ID:"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/hot_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text=""
+                android:background="@drawable/shape_round_corner_live_trans_half1"
+                android:paddingLeft="8dp"
+                android:paddingRight="7dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_id"
+                android:textColor="@color/text_white"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="封号"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act_live_music1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关房"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act_live_music2"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="显示"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act_live_music4"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="隐藏"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music6"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act_live_music3"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="获取信息"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music7"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act_live_music6"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="换头像"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_live_music8"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/selector_oval_live_button"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="封禁"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

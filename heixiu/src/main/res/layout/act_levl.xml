@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9faf9"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="278dp">
+
+        <RelativeLayout
+            android:id="@+id/relativelayot_bg"
+            android:layout_width="186dp"
+            android:layout_height="186dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/level_bg"/>
+
+            <TextView
+                android:id="@+id/tv_grade"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/start_act_level"
+                android:gravity="center"
+                tools:text="0"
+                android:textColor="@color/text_name"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_leve_lv1"
+            android:layout_toLeftOf="@+id/ll_pro"
+            android:layout_toStartOf="@+id/ll_pro"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignTop="@+id/ll_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="LV1"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/text_leve_lv2"
+            android:layout_toRightOf="@+id/ll_pro"
+            android:layout_toEndOf="@+id/ll_pro"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignTop="@+id/ll_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="LV2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textview_proportion"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="66dp"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:background="@drawable/leve_progresss"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/white"
+            tools:text="0%"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="54dp"
+            android:id="@+id/ll_pro"
+            android:layout_width="216dp"
+            android:layout_height="14dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:background="@drawable/leveshape_progress"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+                android:id="@+id/my_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_gravity="center"
+                android:layout_width="14dp"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progress="100"
+                android:progressDrawable="@drawable/progressbar_color"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distance_textview"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="29dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.5sp"
+            tools:text="距离升级"
+            android:textColor="#999999"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/upgradeimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/up_grage"
+            android:textSize="15.5sp"
+            android:textColor="#666666"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="162dp"
+            android:background="@color/white"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gift_actlevl"
+                android:layout_centerVertical="true"
+                android:id="@+id/gift_actlevl"/>
+
+            <TextView
+                android:id="@+id/tvgift_actlevl"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_alignTop="@+id/gift_actlevl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:text="@string/level1"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tvgift_actlevl1"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvgift_actlevl"
+                android:textSize="9sp"
+                android:textColor="#999999"
+                android:text="@string/level2"/>
+
+            <TextView
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_below="@+id/tvgift_actlevl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="#999999"
+                android:text="@string/level3"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="162dp"
+            android:background="@color/white"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ganlook_actlevl"
+                android:layout_centerVertical="true"
+                android:id="@+id/guankanIm_actlevl"/>
+
+            <TextView
+                android:id="@+id/guankan_actlevl"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_alignTop="@+id/guankanIm_actlevl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:text="@string/level4"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/guankan_actlevl1"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guankan_actlevl"
+                android:textSize="9sp"
+                android:textColor="#999999"
+                android:text="@string/level5"/>
+
+            <TextView
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_below="@+id/guankan_actlevl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="#999999"
+                android:text="@string/level6"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/grade_actlevl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legal_right"
+            android:textSize="15.5sp"
+            android:textColor="#666666"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jinfang_act_level"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="162dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="56dp">
+
+            <TextView
+                android:id="@+id/jinfangtext_act_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="13.5sp"
+                android:text="@string/level7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#999999"
+                android:text="@string/level8"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="13.5sp"
+        android:text="@string/level9"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content">
+
+    <studio.archangel.toolkitv2.views.AngelMaterialButton
+        android:id = "@+id/item_menu_tv"
+        android:layout_width = "match_parent"
+        android:layout_height = "48dp"
+        android:layout_gravity = "center_vertical"
+        android:paddingLeft = "24dp"
+        app:amb_text = ""
+        app:amb_text_color = "@color/text_black"
+        app:amb_text_gravity = "left"
+        app:amb_text_size = "14sp"
+        app:aml_color_background = "@color/trans" />
+</FrameLayout>

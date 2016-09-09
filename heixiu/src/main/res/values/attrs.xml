@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PanningView">
+        <attr name="panningDurationInMs" format="integer" />
+    </declare-styleable>
+
+    <attr name="border_width" format="dimension" />
+    <attr name="border_color" format="color" />
+
+    <!--描边字体-->
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="border_color" />
+        <attr name="border_width" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ScrollDownLayout">
+        <attr name="max_offset" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- 飘星自定义属性 -->
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="bgProgressBarColor" format="color" />
+    </declare-styleable>
+    -
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+</resources>

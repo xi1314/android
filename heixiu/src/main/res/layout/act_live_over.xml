@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageview_backbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_above="@+id/text_textview_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_oval_white"
+        android:padding="1dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/host_headh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:placeholderImageScaleType="fitXY"
+            app:placeholderImage="@drawable/placeholder"
+            app:roundAsCircle="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yidibxian_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12dp"/>
+
+    <View
+        android:id="@+id/yidibxian_view"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_above="@+id/act_live_over_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/yidibxian"
+        android:src="@color/trans_75">
+
+    </View>
+
+    <TextView
+        android:id="@+id/act_live_over_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_live_over_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="直播已结束"
+        android:textColor="@color/hx_main"
+        android:textSize="16sp"/>
+    <!--
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:id = "@+id/act_live_over_divider"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            android:layout_above = "@+id/act_live_over_anchor"
+            android:layout_marginBottom = "28dp"
+            android:src = "@drawable/yidibxian"
+            />-->
+
+    <View
+        android:id="@+id/act_live_over_divider"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:layout_above="@+id/act_live_over_anchor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/yidibxian"
+        android:src="@color/trans_75"/>
+
+    <Space
+        android:id="@+id/act_live_over_anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+
+        android:visibility="visible"
+        android:id="@+id/act_live_over_tmp11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_live_over_tmp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/act_live_over_view1111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textview_guankan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="新增魅力值"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/act_live_over_like1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="新增粉丝数"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_live_over_tmp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_live_over_anchor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/act_live_over_view111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textview_guankan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="观看人数"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_live_over_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/act_live_over_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="点赞人数"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/act_live_over_atton"
+        android:layout_width="193dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/act_live_over_tmp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/selector_shape_fanhui"
+        android:gravity="center"
+        android:text="未关注"
+        android:textColor="@color/trans_white_75"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/act_live_over_back"
+        android:layout_width="193dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/act_live_over_tmp11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_shape_fanhui"
+        android:gravity="center"
+        android:text="返回首页"
+
+        android:textColor="@color/trans_white_75"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/saveRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_live_over_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/saveRecord"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+</RelativeLayout>

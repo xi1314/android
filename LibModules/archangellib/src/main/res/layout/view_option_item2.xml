@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:layout_gravity = "center_vertical"
+    android:background = "@color/trans"
+    android:clipToPadding = "false"
+    android:orientation = "horizontal">
+
+    <ImageView
+        android:id = "@+id/widget_option_item_icon"
+        android:layout_width = "24dp"
+        android:layout_height = "24dp"
+        android:layout_gravity = "center_vertical"
+        android:layout_marginRight = "16dp"
+        android:layout_weight = "0"
+        android:src = "@color/trans" />
+
+    <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center_vertical"
+        android:layout_weight = "1"
+        android:orientation = "vertical">
+
+        <TextView
+            android:id = "@+id/widget_option_item_title"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center_horizontal"
+            android:text = ""
+            android:textSize = "16sp" />
+
+        <TextView
+            android:id = "@+id/widget_option_item_subtitle"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:text = ""
+            android:textColor = "@color/text_grey"
+            android:textSize = "12sp"
+            android:visibility = "visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id = "@+id/widget_option_item_content"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center_vertical"
+        android:layout_marginLeft = "8dp"
+        android:layout_weight = "0"
+        android:gravity = "center"
+        android:textColor = "@color/text_grey"
+        android:textSize = "12sp" />
+
+    <FrameLayout
+        android:id = "@+id/widget_option_item_custom"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center_vertical"
+        android:layout_marginLeft = "8dp"
+        android:layout_weight = "0"
+        android:clipToPadding = "false"
+        android:visibility = "gone" />
+
+    <ImageView
+        android:id = "@+id/widget_option_item_arrow"
+        android:layout_width = "16dp"
+        android:layout_height = "16dp"
+        android:layout_gravity = "center_vertical"
+        android:layout_marginLeft = "16dp"
+        android:layout_weight = "0"
+        android:src = "@drawable/frag_arrow_right_black" />
+</LinearLayout>

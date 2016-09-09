@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标准版本的盒子 -->
+<resources>
+    <dimen name="show_gerenziliao_width" >280dp</dimen>
+    <dimen name="show_gerenziliao_height" >290dp</dimen>
+</resources>

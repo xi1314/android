@@ -1,0 +1,17 @@
+<!--<?xml version="1.0" encoding="utf-8"?>--><!--<shape xmlns:android="http://schemas.android.com/apk/res/android">--><!--<corners--><!--android:topLeftRadius="4dp"--><!--android:topRightRadius="4dp" />--><!--<solid android:color="@color/hx_main" />--><!--<stroke android:color="@color/black" android:width="2dp" />--><!--</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/trans" />
+            <corners android:topLeftRadius="4dp" android:topRightRadius="4dp"></corners>
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="#613da1" />
+            <corners android:topLeftRadius="4dp" android:topRightRadius="4dp"></corners>
+        </shape>
+    </item>
+</layer-list>

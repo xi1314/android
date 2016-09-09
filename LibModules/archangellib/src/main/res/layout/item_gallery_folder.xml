@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id = "@+id/item_gallery_folder_image"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		app:actualImageScaleType = "centerCrop"
+		app:placeholderImage = "@color/trans_25"
+		app:placeholderImageScaleType = "fitXY"
+		app:viewAspectRatio = "1"/>
+
+	<ImageView
+		android:id = "@+id/item_gallery_folder_mask"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:layout_alignBottom = "@+id/item_gallery_folder_image"
+		android:layout_alignLeft = "@+id/item_gallery_folder_image"
+		android:layout_alignRight = "@+id/item_gallery_folder_image"
+		android:layout_alignTop = "@+id/item_gallery_folder_image"
+		android:src = "@color/trans_50"/>
+
+	<LinearLayout
+		android:id = "@+id/item_gallery_folder_layout"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_alignBottom = "@+id/item_gallery_folder_image"
+		android:background = "@color/trans_25"
+		android:minHeight = "24dp"
+		android:orientation = "horizontal"
+		android:paddingLeft = "8dp"
+		android:paddingRight = "8dp">
+
+		<TextView
+			android:id = "@+id/item_gallery_folder_name"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity = "center_vertical"
+			android:layout_weight = "1"
+			android:ellipsize = "end"
+			android:singleLine = "true"
+			android:text = "name"
+			android:textColor = "@color/text_white"
+			android:textSize = "13sp"/>
+
+		<TextView
+			android:id = "@+id/item_gallery_folder_count"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity = "center_vertical"
+			android:layout_marginLeft = "4dp"
+			android:text = "1000"
+			android:textColor = "@color/text_white"
+			android:textSize = "10sp"/>
+	</LinearLayout>
+
+	<ImageView
+		android:id = "@+id/item_gallery_folder_box"
+		android:layout_width = "18dp"
+		android:layout_height = "18dp"
+		android:layout_alignParentRight = "true"
+		android:layout_marginRight = "4dp"
+		android:layout_marginTop = "4dp"
+		android:background = "@drawable/shape_oval_green"
+		android:padding = "4dp"
+		android:src = "@drawable/icon_ok_white_small"
+		android:visibility = "gone"/>
+</RelativeLayout>

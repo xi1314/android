@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_back"
+    android:background="@drawable/upgrade_background">
+
+    <!--android:layout_width="244dp"-->
+    <!--android:layout_height="226dp"-->
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:textColor="@color/text_black"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text=""/>
+
+    <LinearLayout
+        android:id="@+id/ll_statu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_message"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="26dp">
+
+        <studio.archangel.toolkitv2.views.AngelMaterialButton
+            android:id="@+id/btn_cecal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:minHeight="42dp"
+            android:visibility="visible"
+            app:amb_text="取消"
+            app:amb_text_color="@color/white"
+            app:amb_text_size="14sp"
+            app:aml_border="round_corner"
+            app:aml_color_background="@color/text_des"/>
+
+        <studio.archangel.toolkitv2.views.AngelMaterialButton
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:minHeight="42dp"
+            app:amb_text="确定"
+            app:amb_text_color="@color/white"
+            app:amb_text_size="14sp"
+            app:aml_border="round_corner"
+            app:aml_color_background="@color/hx_main"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

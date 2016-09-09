@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cusrlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.remair.heixiu.view.PanningView
+        android:id="@+id/pan_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg1"
+        app:panningDurationInMs="20000"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efffffff"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:id="@+id/iv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:src="@drawable/icon_arrow_left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/text_name"
+                android:textSize="20sp"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/text_name"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/act_register_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="手机号"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingBottom="225dp"
+                    android:textColor="@color/text_name"
+                    android:textColorHint="@color/give_zuan"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/icon_delete_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/delete"
+                    android:visibility="invisible"/>
+
+                <studio.archangel.toolkitv2.views.AngelDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/act_send_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="验证码"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:paddingBottom="179dp"
+                        android:textColor="@color/text_name"
+                        android:textColorHint="@color/give_zuan"
+                        android:textCursorDrawable="@null"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/act_test_send"
+                        android:minHeight="20dp"
+                        android:paddingTop="5dp"
+                        android:minWidth="20dp"
+                        android:src="@drawable/delete"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/act_test_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/shape_round_corner_back"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="发送验证码"
+                        android:textColor="@color/give_zuan"
+                        android:textSize="15sp"/>
+
+                    <studio.archangel.toolkitv2.views.AngelDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginTop="35dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/act_register_psw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="@string/register_name_digits"
+                        android:gravity="center"
+                        android:hint="密码"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxHeight="100dp"
+                        android:maxLength="30"
+                        android:paddingBottom="120dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_name"
+                        android:textColorHint="@color/give_zuan"
+                        android:textCursorDrawable="@null"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_showhint"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/login_psw_hide"
+                        android:textColor="#999999"/>
+
+                    <ImageView
+                        android:id="@+id/icon_delete_password"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/iv_showhint"
+                        android:src="@drawable/delete"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <studio.archangel.toolkitv2.views.AngelDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="55dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="59dp"
+                    android:text="8~16位数字和字母的组合"
+                    android:textColor="@color/gray"/>
+
+                <studio.archangel.toolkitv2.views.AngelMaterialButton
+                    android:id="@+id/act_register_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="108dp"
+                    android:minHeight="42dp"
+                    app:amb_text="注册"
+                    app:amb_text_color="@color/white"
+                    app:amb_text_size="16sp"
+                    app:aml_border="round"
+                    app:aml_color_background="#3cccb0"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/protol"
+            android:textColor="@color/give_zuan"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:id = "@+id/layer_angel_material_checkbox_border">
+        <shape android:shape = "rectangle">
+            <stroke
+                android:width = "2dp"
+                android:color = "@color/text_black" />
+            <solid android:color = "@color/trans" />
+            <corners android:radius = "2dp" />
+        </shape>
+    </item>
+    <item
+        android:id = "@+id/layer_angel_material_checkbox_back"
+        android:drawable = "@drawable/clip_checkbox_back" />
+    <item
+        android:id = "@+id/layer_angel_material_checkbox_tick"
+        android:bottom = "2dp"
+        android:drawable = "@drawable/clip_checkbox_tick"
+        android:left = "2dp"
+        android:right = "2dp"
+        android:top = "2dp" />
+</layer-list>

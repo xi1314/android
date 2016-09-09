@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:drawable = "@drawable/background_button" />
+    <item android:id = "@+id/shape_shadow">
+        <shape android:shape = "rectangle">
+            <corners android:radius = "4dp" />
+            <corners
+                android:bottomLeftRadius = "3dp"
+                android:bottomRightRadius = "3dp"
+                android:topLeftRadius = "2dp"
+                android:topRightRadius = "2dp" />
+            <gradient
+                android:angle = "90"
+                android:endColor = "#80000000"
+                android:startColor = "#4b9c9c9c" />
+            <corners android:radius = "4dp" />
+            <gradient
+                android:centerColor = "#4b9c9c9c"
+                android:endColor = "#80000000"
+                android:gradientRadius = "100"
+                android:startColor = "#c1c1c1"
+                android:type = "radial" />
+        </shape>
+    </item>
+    <item
+        android:id = "@+id/layer_angel_material_progress_bar_back"
+        android:bottom = "1dp"
+        android:left = "1dp"
+        android:right = "1dp"
+        android:top = "1dp">
+        <shape android:shape = "rectangle">
+            <corners android:radius = "4dp" />
+            <solid android:color = "#FFF" />
+        </shape>
+    </item>
+</layer-list>

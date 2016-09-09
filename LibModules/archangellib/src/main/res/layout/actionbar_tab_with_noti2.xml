@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "48dp"
+    android:minHeight = "48dp"
+    android:minWidth = "64dp">
+
+    <com.gc.materialdesign.views.RelativeLayout
+        android:id = "@+id/actionbar_notitab_bg"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@color/trans">
+        <!--<RelativeLayout-->
+        <!--android:id = "@+id/actionbar_notitab_tmp"-->
+        <!--android:layout_width = "wrap_content"-->
+        <!--android:layout_height = "wrap_content"-->
+        <!--android:layout_centerInParent = "true"-->
+        <!--android:orientation = "horizontal">-->
+        <!--<TextView-->
+        <!--android:id = "@+id/actionbar_notitab_text"-->
+        <!--android:layout_width = "wrap_content"-->
+        <!--android:layout_height = "wrap_content"-->
+        <!--android:layout_centerInParent = "true"-->
+        <!--android:layout_marginLeft = "12dp"-->
+        <!--android:text = "标题"-->
+        <!--android:textSize = "14sp" />-->
+        <!--<ImageView-->
+        <!--android:id = "@+id/actionbar_notitab_noti"-->
+        <!--android:layout_width = "8dp"-->
+        <!--android:layout_height = "8dp"-->
+        <!--android:layout_centerVertical = "true"-->
+        <!--android:layout_marginLeft = "2dp"-->
+        <!--android:layout_marginRight = "2dp"-->
+        <!--android:layout_toRightOf = "@+id/actionbar_notitab_text"-->
+        <!--android:src = "@drawable/shape_circle_red"-->
+        <!--android:visibility = "visible" />-->
+        <!--</RelativeLayout>-->
+        <LinearLayout
+            android:id = "@+id/actionbar_notitab_tmp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerInParent = "true"
+            android:orientation = "horizontal"
+            android:paddingLeft = "8dp"
+            android:paddingRight = "8dp">
+
+            <TextView
+                android:id = "@+id/actionbar_notitab_text"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center_vertical"
+                android:text = "标题"
+                android:textSize = "14sp" />
+
+            <ImageView
+                android:id = "@+id/actionbar_notitab_noti"
+                android:layout_width = "8dp"
+                android:layout_height = "8dp"
+                android:layout_gravity = "center_vertical"
+                android:layout_marginLeft = "8dp"
+                android:src = "@drawable/shape_circle_red"
+                android:visibility = "gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id = "@+id/actionbar_notitab_indicator"
+            android:layout_width = "match_parent"
+            android:layout_height = "1dp"
+            android:layout_alignParentBottom = "true"
+            android:layout_centerHorizontal = "true"
+            android:minWidth = "64dp"
+            android:src = "@color/red"
+            android:visibility = "invisible" />
+    </com.gc.materialdesign.views.RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_live_chat_back"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/shape_gift_round">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_live_chat_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:placeholderImage="@drawable/placeholder"
+            app:placeholderImageScaleType="fitXY"
+            app:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:id="@+id/item_live_chat_tmp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toRightOf="@+id/item_live_chat_avatar"
+            android:layout_toEndOf="@+id/item_live_chat_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_live_chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Name"
+                android:textColor="@color/text_white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/item_live_chat_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Des"
+                android:textColor="@color/hx_main"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_live_chat_gift"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/tv_count"
+        app:placeholderImage="@color/trans"
+        app:roundAsCircle="false"/>
+
+    <com.remair.heixiu.giftview.StrokeTextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_live_chat_back"
+        android:text="X1"
+        android:textColor="@color/species_color"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        app:border_color="@color/pross_color"
+        app:border_width="2dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_win_small"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/msg_enter"
+        android:layout_below="@+id/item_live_chat_gift"
+        android:background="#00000000"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_winsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_win"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="恭喜获得50倍大奖"
+            android:textColor="@color/win_color"
+            android:textSize="14sp"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/view_web_browser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/view_web_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <studio.archangel.toolkitv2.views.AngelDivider
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/view_web_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:aml_color_background="@color/trans"
+                    app:aml_trigger_mode="start">
+
+                    <ImageView
+                        android:id="@+id/view_web_back_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_arrow_left_grey"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+                <!--<studio.archangel.toolkitv2.views.AngelDivider-->
+                <!--android:layout_width = "1px"-->
+                <!--android:layout_height = "match_parent"-->
+                <!--android:paddingBottom = "8dp"-->
+                <!--android:paddingTop = "8dp" />-->
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/view_web_forward"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:aml_color_background="@color/trans"
+                    app:aml_trigger_mode="start">
+
+                    <ImageView
+                        android:id="@+id/view_web_forward_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_arrow_right_grey"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/view_web_refresh"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:aml_color_background="@color/trans"
+                    app:aml_trigger_mode="start">
+
+                    <ImageView
+                        android:id="@+id/view_web_refresh_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_refresh"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <studio.archangel.toolkitv2.views.AngelProgressBarHorizontal
+        android:id="@+id/view_web_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"/>
+</RelativeLayout>

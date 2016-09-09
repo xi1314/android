@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_show_create_mask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bf000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:focusable="true">
+
+            <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+
+                android:id="@+id/act_show_create_close"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:clipToPadding="false"
+                app:aml_border="round"
+                app:aml_color_background="@color/trans"
+                app:aml_mode="dark">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_live_close"/>
+
+            </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/act_show_create_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@null"
+            android:hint="输入你想要的直播内容"
+            android:maxLength="16"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="#b1b1b1"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/parent_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_show_create_name"
+            android:layout_marginTop="52dp"
+            android:orientation="horizontal"
+            android:paddingLeft="38dp"
+            android:paddingRight="38dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/act_show_create_weibo"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    app:aml_border="round"
+                    app:aml_color_background="@color/trans">
+
+                    <ImageView
+                        android:id="@+id/act_show_create_weibo_image"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_weibo_hint"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/act_show_create_wechat"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    app:aml_border="round"
+                    app:aml_color_background="@color/trans">
+
+                    <ImageView
+                        android:id="@+id/act_show_create_wechat_image"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_wechat"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/act_show_create_moment"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    app:aml_border="round"
+                    app:aml_color_background="@color/trans">
+
+                    <ImageView
+                        android:id="@+id/act_show_create_moment_image"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_moment"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/act_show_create_qq"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    app:aml_border="round"
+                    app:aml_color_background="@color/trans">
+
+                    <ImageView
+                        android:id="@+id/act_show_create_qq_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_qq_hint"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout
+                    android:id="@+id/act_show_create_qqzone"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    app:aml_border="round"
+                    app:aml_color_background="@color/trans">
+
+                    <ImageView
+                        android:id="@+id/act_show_create_qqzone_image"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_qqzone"/>
+                </studio.archangel.toolkitv2.views.AngelMaterialRelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--私密直播切换-->
+        <LinearLayout
+            android:id="@+id/type_change_ll"
+            android:gravity="center"
+            android:layout_marginTop="56dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/parent_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/type_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80eeaf"
+                android:textSize="16sp"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_type_public"
+                android:text="公开直播"/>
+
+            <TextView
+                android:id="@+id/tv_scret_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="13sp"
+                android:textColor="#b1b1b1"
+                android:text="@string/type_hint"/>
+        </LinearLayout>
+
+        <!--私密直播密码-->
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/type_change_ll"
+            android:id="@+id/type_pwd"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.remair.heixiu.view.EditTextView
+                android:id="@+id/et_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:textColor="#b1b1b1"
+                android:textSize="13sp"
+                android:text="@string/pwd_hint"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <studio.archangel.toolkitv2.views.AngelMaterialButton
+        android:id="@+id/act_show_create_start"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp"
+        app:amb_text="开始直播"
+        android:layout_marginBottom="105dp"
+        android:layout_centerHorizontal="true"
+        app:amb_text_color="@color/text_white"
+        android:layout_alignParentBottom="true"
+        app:amb_text_size="19sp"
+        app:aml_color_background="@color/hx_main"
+        app:aml_border="round"/>
+</RelativeLayout>

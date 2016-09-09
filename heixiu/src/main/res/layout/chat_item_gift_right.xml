@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            app:placeholderImage="@drawable/icon_avatar_default"
+            app:roundAsCircle="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_chat_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_avatar"
+            android:background="@drawable/chat_gift_myself">
+
+            <TextView
+                android:id="@+id/tv_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="赠送礼物"
+                android:textColor="@color/chat_gift_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_giftname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_gift"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="送了一个棒棒糖"
+                android:textColor="@color/chat_gift_color"
+                android:textSize="16sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_gift_pic"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_giftname"
+                app:placeholderImage="@drawable/placeholder"
+                app:roundAsCircle="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_strokecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_chat_gift"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/iv_avatar"
+            android:text="您的经验值+10"
+            android:textColor="@color/main_gray"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+
+        <ProgressBar
+            android:id="@+id/pb_status"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rl_chat_gift"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_msg_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rl_chat_gift"
+            android:clickable="true"
+            android:src="@drawable/msg_resend"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

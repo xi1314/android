@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/common_title"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12dp"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_Account_Security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="账号安全"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_setting_banned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="黑名单"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_setting_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="推送管理"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_setting_about"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="关于我们"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_setting_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="用户反馈"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12dp"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_setting_cacha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_content="0MB"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="-15dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="@color/text_name"
+            app:aoi_title="清理缓存"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12dp"
+            android:src="#cdcdcd"/>
+
+        <studio.archangel.toolkitv2.views.AngelOptionItem
+            android:id="@+id/act_setting_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:aml_color_background="@color/white"
+            app:aoi_arrow_visible="false"
+            app:aoi_icon_back="@color/trans"
+            app:aoi_icon_src="@color/trans"
+            app:aoi_icon_title_spacing="122dp"
+            app:aoi_icon_visible="true"
+            app:aoi_text_color="#9461aa"
+            app:aoi_title="退出登录"
+            app:aoi_title_text_size="16sp"/>
+
+        <studio.archangel.toolkitv2.views.AngelDivider
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="40dp"
+            android:src="#cdcdcd"/>
+    </LinearLayout>
+</ScrollView>
